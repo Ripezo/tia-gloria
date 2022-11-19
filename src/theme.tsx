@@ -1,9 +1,16 @@
-import { Indie_Flower } from "@next/font/google";
+import { Indie_Flower, Roboto } from "@next/font/google";
 import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
-export const roboto = Indie_Flower({
+export const indieFlower = Indie_Flower({
   weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["Helvetica", "Arial", "sans-serif"],
+});
+
+export const roboto = Roboto({
+  weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin"],
   display: "swap",
   fallback: ["Helvetica", "Arial", "sans-serif"],
@@ -25,7 +32,10 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: indieFlower.style.fontFamily,
+    body1: {
+      fontFamily: roboto.style.fontFamily
+    }
   },
 });
 
