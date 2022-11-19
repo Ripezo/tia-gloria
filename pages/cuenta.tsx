@@ -50,7 +50,7 @@ export default function Cuenta() {
               <TableBody>
                 <TableRow>
                   <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1">Nombre:</Typography>
+                    <Typography variant="body1" sx={{ userSelect: "none" }}>Nombre:</Typography>
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="body1">Gloria Salinas</Typography>
@@ -58,7 +58,7 @@ export default function Cuenta() {
                 </TableRow>
                 <TableRow>
                   <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1">Alias:</Typography>
+                    <Typography variant="body1" sx={{ userSelect: "none" }}>Alias:</Typography>
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="body1">Tía Gloria</Typography>
@@ -66,7 +66,7 @@ export default function Cuenta() {
                 </TableRow>
                 <TableRow>
                   <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1">RUT:</Typography>
+                    <Typography variant="body1" sx={{ userSelect: "none" }}>RUT:</Typography>
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="body1">11.363.728-5</Typography>
@@ -74,7 +74,7 @@ export default function Cuenta() {
                 </TableRow>
                 <TableRow>
                   <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1">Correo electrónico:</Typography>
+                    <Typography variant="body1" sx={{ userSelect: "none" }}>Correo electrónico:</Typography>
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="body1">
@@ -84,7 +84,7 @@ export default function Cuenta() {
                 </TableRow>
                 <TableRow>
                   <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1">Banco:</Typography>
+                    <Typography variant="body1" sx={{ userSelect: "none" }}>Banco:</Typography>
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="body1">Banco Estado</Typography>
@@ -92,7 +92,7 @@ export default function Cuenta() {
                 </TableRow>
                 <TableRow>
                   <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1">Tipo de cuenta:</Typography>
+                    <Typography variant="body1" sx={{ userSelect: "none" }}>Tipo de cuenta:</Typography>
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="body1">Vista</Typography>
@@ -100,7 +100,7 @@ export default function Cuenta() {
                 </TableRow>
                 <TableRow>
                   <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1">Número de cuenta:</Typography>
+                    <Typography variant="body1" sx={{ userSelect: "none" }}>Número de cuenta:</Typography>
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="body1">11363728</Typography>
