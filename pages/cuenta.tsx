@@ -37,72 +37,40 @@ export default function Cuenta() {
           }}
         >
           <Typography variant="h5" sx={{ userSelect: "none" }}>
-            Cuenta RUT
-          </Typography>
-          <Typography variant="h6" sx={{ userSelect: "none" }}>
-            de la
-          </Typography>
-          <Typography variant="h5" sx={{ userSelect: "none" }}>
-            Tía Gloria
+            Datos de Transferencia
           </Typography>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: "300px" }}>
               <TableBody>
                 <TableRow>
-                  <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1" sx={{ userSelect: "none" }}>Nombre:</Typography>
-                  </TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">
                     <Typography variant="body1">Gloria Salinas</Typography>
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1" sx={{ userSelect: "none" }}>Alias:</Typography>
-                  </TableCell>
-                  <TableCell align="right">
-                    <Typography variant="body1">Tía Gloria</Typography>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1" sx={{ userSelect: "none" }}>RUT:</Typography>
-                  </TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">
                     <Typography variant="body1">11.363.728-5</Typography>
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1" sx={{ userSelect: "none" }}>Correo electrónico:</Typography>
-                  </TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">
                     <Typography variant="body1">
                       gloria.contacto@gmail.com
                     </Typography>
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1" sx={{ userSelect: "none" }}>Banco:</Typography>
-                  </TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">
                     <Typography variant="body1">Banco Estado</Typography>
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1" sx={{ userSelect: "none" }}>Tipo de cuenta:</Typography>
-                  </TableCell>
-                  <TableCell align="right">
-                    <Typography variant="body1">Vista</Typography>
+                  <TableCell align="center">
+                    <Typography variant="body1">Cuenta Vista</Typography>
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell component={"th"} scope={"row"}>
-                    <Typography variant="body1" sx={{ userSelect: "none" }}>Número de cuenta:</Typography>
-                  </TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">
                     <Typography variant="body1">11363728</Typography>
                   </TableCell>
                 </TableRow>
