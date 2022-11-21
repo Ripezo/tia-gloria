@@ -17,7 +17,7 @@ export const roboto = Roboto({
 });
 
 export const caveat = Caveat({
-  weight: [ "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
   fallback: ["Helvetica", "Arial", "sans-serif"],
@@ -26,10 +26,25 @@ export const caveat = Caveat({
 // Create a theme instance.
 const theme = createTheme({
   components: {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          background: '#ffffff33'
+        }
+      }
+    },
+    MuiTable: {
+      styleOverrides: {
+        root: {
+          margin: '16px 0'
+        }
+      }
+    },
     MuiTableCell: {
       styleOverrides: {
         root: {
-
+          padding: 0,
+          border: 'none'
         }
       }
     },
@@ -38,6 +53,11 @@ const theme = createTheme({
         root: {
           fontFamily: caveat.style.fontFamily,
           minWidth: '160px',
+          margin: '16px',
+          fontSize: '24px',
+          fontWeight: '600',
+          textTransform: 'capitalize',
+          borderRadius: '8px'
         }
       }
     }
@@ -56,6 +76,9 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: caveat.style.fontFamily,
+    h4: {
+      textAlign: 'center',
+    },
     body1: {
       fontFamily: roboto.style.fontFamily
     }

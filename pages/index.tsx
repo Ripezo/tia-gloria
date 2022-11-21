@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
       <Box className={CSS.container}>
         <Card className={CSS.card}>
-          <Typography className={CSS.title} variant="h5">
+          <Typography className={CSS.title} variant="h4">
             Mi cuenta Rut
           </Typography>
           <TableContainer component={Paper} sx={{ backgroundColor: "transparent" }} elevation={0}>
