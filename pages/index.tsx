@@ -14,8 +14,7 @@ import { Box } from "@mui/system";
 import Head from "next/head";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import CSS from './cuenta.module.css';
-import Image from "next/image";
+import CSS from '../styles/Home.module.css';
 
 export default function Home() {
 
