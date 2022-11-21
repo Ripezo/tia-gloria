@@ -48,8 +48,8 @@ export default function Home() {
                 <>
                   {accountData && accountData.map((data, index) => {
                     return (
-                      <TableRow className={CSS.row}>
-                        <TableCell className={CSS.celda} align="center">
+                      <TableRow key={'row-'+index} className={CSS.row}>
+                        <TableCell key={'cell-'+index} className={CSS.celda} align="center">
                           <Typography>{data}</Typography>
                         </TableCell>
                       </TableRow>
