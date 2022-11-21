@@ -1,4 +1,4 @@
-import { Indie_Flower, Roboto } from "@next/font/google";
+import { Caveat, Indie_Flower, Roboto } from "@next/font/google";
 import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
@@ -16,13 +16,36 @@ export const roboto = Roboto({
   fallback: ["Helvetica", "Arial", "sans-serif"],
 });
 
+export const caveat = Caveat({
+  weight: [ "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["Helvetica", "Arial", "sans-serif"],
+});
+
 // Create a theme instance.
 const theme = createTheme({
-  
+  components: {
+    MuiTableCell: {
+      styleOverrides: {
+        root: {
+
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          fontFamily: caveat.style.fontFamily,
+          minWidth: '160px',
+        }
+      }
+    }
+  },
   palette: {
     mode: "light",
     primary: {
-      main: "#556cd6",
+      main: "#ffcf00",
     },
     secondary: {
       main: "#19857b",
@@ -32,7 +55,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: indieFlower.style.fontFamily,
+    fontFamily: caveat.style.fontFamily,
     body1: {
       fontFamily: roboto.style.fontFamily
     }
