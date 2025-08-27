@@ -1,4 +1,4 @@
-import { Caveat, Indie_Flower, Roboto } from "@next/font/google";
+import { Caveat, Indie_Flower, Roboto } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
